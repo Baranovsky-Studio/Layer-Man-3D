@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c4ff84ad24f85b6e84de1a47bff5d, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  CirclesCounts: 0100000005000000080000000c0000000f0000001200000015000000180000001b0000001e0000002100000024000000270000002a0000002d0000003000000033000000360000003a0000003e00000041000000
+  Incomes:
+  - 1
+  - 1.05
+  - 1.1
+  - 1.15
+  - 1.2
+  - 1.25
+  - 1.3
+  - 1.35
+  - 1.4
+  - 1.45
+  - 1.5
+  - 1.55
+  - 1.6
+  - 1.65
+  - 1.7
+  - 1.75
+  - 1.8
+  - 1.85
+  - 1.9
+  - 1.95
+  - 2
+  CirclesSettings:
+  - Big: {fileID: -7387706064836869012, guid: 0690cdf412c64ab4eaf313a79ebf3d76, type: 3}
+    Normal: {fileID: -7387706064836869012, guid: 4a57518e2136ee940bc2e4c8a1f272a6, type: 3}
+    Nano: {fileID: -7387706064836869012, guid: d5033c4e4a37fbf479c91b08b3bd57d9, type: 3}
+    MinScale: 0.6
+  - Big: {fileID: -5053925668127403250, guid: 07c5c5df9b6f68b4e84a61d67a239f00, type: 3}
+    Normal: {fileID: -8678823145569952518, guid: 93a2bbf98a127284e80eb05810f85274, type: 3}
+    Nano: {fileID: -5495902117074765545, guid: 523d4de2d75d74a40a6a88db67f9f4cb, type: 3}
+    MinScale: 0.6
+  - Big: {fileID: 6255687079079774844, guid: ea5f6db8b9cb6d74fade0a9a207c6579, type: 3}
+    Normal: {fileID: 2534964839176971238, guid: a0df74e912e976545a01f87e2fb01af3, type: 3}
+    Nano: {fileID: -125435165217083709, guid: f3af3312990b1774481ecbad2eee3dbe, type: 3}
+    MinScale: 0.8
+  - Big: {fileID: -5053925668127403250, guid: 1d31782b4c6603f479bcedc485493179, type: 3}
+    Normal: {fileID: -8678823145569952518, guid: 785a363d307a89e4784a00217737dc87, type: 3}
+    Nano: {fileID: -4832975252204366008, guid: 6ab36343aa0fe204da1dfdc04390aed3, type: 3}
+    MinScale: 1
+  - Big: {fileID: 2534964839176971238, guid: a3ddc6da56d37af48929834711e543ff, type: 3}
+    Normal: {fileID: -125435165217083709, guid: 48bf286796034e0429a8d3ced5e58ce7, type: 3}
+    Nano: {fileID: 5512361600001258384, guid: 63cb520392a3bde49a849e2aca2e8aa1, type: 3}
+    MinScale: 1.5
