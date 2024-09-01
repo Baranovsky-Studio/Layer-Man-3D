@@ -5,7 +5,6 @@ using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using YG;
 
 public class ShopItem : MonoBehaviour
 {
@@ -68,7 +67,7 @@ public class ShopItem : MonoBehaviour
         if (_useUnlockingByAd)
         {
             _unlockByAd.onClick.AddListener(OnUnlockByAdClick);
-            YandexGame.RewardVideoEvent += OnRewardedShown;
+            //YandexGame.RewardVideoEvent += OnRewardedShown;
         }
     }
 
@@ -79,7 +78,7 @@ public class ShopItem : MonoBehaviour
 
     private void OnUnlockByAdClick()
     {
-        YandexGame.RewVideoShow(gameObject.GetInstanceID());
+        //YandexGame.RewVideoShow(gameObject.GetInstanceID());
     }
 
     private void OnRewardedShown(int n)
@@ -144,7 +143,7 @@ public class ShopItem : MonoBehaviour
         {
             if (_useNoTail)
             {
-                _icon.sprite = YandexGame.EnvironmentData.language == "ru" ? _noTailRus : _unlocked;
+                _icon.sprite = _unlocked;
             }
             else
             {
@@ -159,7 +158,7 @@ public class ShopItem : MonoBehaviour
         {
             if (_useNoTail)
             {
-                _icon.sprite = YandexGame.EnvironmentData.language == "ru" ? _noTailRus : _unlocked;
+                _icon.sprite = _unlocked;
             }
             else
             {

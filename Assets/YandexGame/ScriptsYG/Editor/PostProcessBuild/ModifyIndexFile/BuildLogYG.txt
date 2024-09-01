@@ -1,2 +1,0 @@
-Build path: F:/Program Files/Work/Unity/Projects/Pocket Snake/Layer-Man-3D/Builds/build
-Build number: 37

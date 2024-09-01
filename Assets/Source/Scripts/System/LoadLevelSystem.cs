@@ -2,7 +2,6 @@ using Kuhpik;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using YG;
 
 namespace Pocket_Snake
 {
@@ -29,8 +28,6 @@ namespace Pocket_Snake
             screen.OnCameraReady();
             
             if (_gameReady) return;
-            
-            YandexGame.Instance.FirstСalls();
             _gameReady = true;
         }
     }

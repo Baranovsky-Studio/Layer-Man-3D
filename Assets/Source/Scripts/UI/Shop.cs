@@ -3,7 +3,6 @@ using Kuhpik;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
-using YG;
 
 public class Shop : MonoBehaviour
 {
@@ -42,7 +41,7 @@ public class Shop : MonoBehaviour
         _buyRandomItem.onClick.AddListener(OnBuyRandomItemButtonClick);
         _getBanknotes.onClick.AddListener(OnGetBanknotesButtonClick);
 
-        YandexGame.RewardVideoEvent += OnRewardedShown;
+        //YandexGame.RewardVideoEvent += OnRewardedShown;
 
         foreach (var list in _lists)
         {
@@ -102,7 +101,7 @@ public class Shop : MonoBehaviour
 
     private void OnGetBanknotesButtonClick()
     {
-        YandexGame.RewVideoShow(33);
+        //YandexGame.RewVideoShow(33);
         _getBanknotes.gameObject.SetActive(false);
     }
 

@@ -2,8 +2,6 @@ using Kuhpik;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Video;
-using YG;
 
 public class MenuUIScreen : UIScreen
 {
@@ -25,14 +23,10 @@ public class MenuUIScreen : UIScreen
     [BoxGroup("SHOP")] [SerializeField] 
     private GameObject _main;
 
-    [BoxGroup("ADVERTISEMENT")] [SerializeField]
-    private Button _ad;
-
     private void Start()
     {
         _play.onClick.AddListener(OnButtonPlayClick);
         _openShop.onClick.AddListener(OnButtonShopClick);
-        _ad.onClick.AddListener(OnButtonAdClick);
     }
 
     public void OnCameraReady()
@@ -49,7 +43,6 @@ public class MenuUIScreen : UIScreen
         if (Bootstrap.Instance.PlayerData.GameId > 1)
         {
             _upgrades.SetActive(true);
-            _ad.gameObject.SetActive(true);
         }
         if (Bootstrap.Instance.PlayerData.GameId > 2)
         {
@@ -67,11 +60,5 @@ public class MenuUIScreen : UIScreen
         _shop.SetActive(true);
         _shopPreview.SetActive(true);
         _main.SetActive(false);
-    }
-
-    private void OnButtonAdClick()
-    {
-        YandexGame.Instance._OnURL_Yandex_DefineDomain("app/265962");
-        _ad.gameObject.SetActive(false);
     }
 }

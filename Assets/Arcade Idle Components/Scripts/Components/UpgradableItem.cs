@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using YG;
 
 namespace BaranovskyStudio
 {
@@ -62,7 +61,7 @@ namespace BaranovskyStudio
         {
             _buttonBuy.Button.onClick.AddListener(TryToUpgradeItem);
             _buttonBuyByAd.onClick.AddListener(TryToUpgradeItemByAd);
-            YandexGame.RewardVideoEvent += OnRewardedShown;
+            //YandexGame.RewardVideoEvent += OnRewardedShown;
                 
             LoadState();
             CheckForErrors();
@@ -134,7 +133,7 @@ namespace BaranovskyStudio
         private void TryToUpgradeItemByAd()
         {
             if (UpgradeLevel == _maxUpgradeLevel) return;
-            YandexGame.RewVideoShow(Id);
+            //YandexGame.RewVideoShow(Id);
         }
 
         private void OnRewardedShown(int id)

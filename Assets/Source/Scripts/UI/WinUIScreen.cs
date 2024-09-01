@@ -6,7 +6,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using YG;
 
 public class WinUIScreen : UIScreen
 {
@@ -25,7 +24,7 @@ public class WinUIScreen : UIScreen
     {
         _claim.onClick.AddListener(OnClaimButtonClick);
         _claimX2.onClick.AddListener(OnClaimX2ButtonClick);
-        YandexGame.RewardVideoEvent += OnRewardedShown;
+        //YandexGame.RewardVideoEvent += OnRewardedShown;
     }
     
     public override void Open()
@@ -56,12 +55,12 @@ public class WinUIScreen : UIScreen
         Bootstrap.Instance.ChangeGameState(GameStateID.Menu);
         Bootstrap.Instance.GetSystem<ResourcesSystem>().AddResourceCount(ResourcesSystem.ResourceType.Banknotes, _reward);
         
-        YandexGame.FullscreenShow();
+        //YandexGame.FullscreenShow();
     }
 
     private void OnClaimX2ButtonClick()
     {
-        YandexGame.RewVideoShow(77);
+        //YandexGame.RewVideoShow(77);
         _claimX2.gameObject.SetActive(false);
     }
 
